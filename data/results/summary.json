@@ -1,0 +1,68 @@
+{
+  "data": {
+    "knowledge_base": 350,
+    "generation_test": 147,
+    "generation_test_removed_overlap": 3,
+    "classification_test": 150,
+    "avg_question_chars": 160,
+    "avg_answer_chars": 179,
+    "type_counts": {
+      "العلاج": 203,
+      "التشخيص": 197,
+      "نمط الحياة الصحي": 87,
+      "أسباب المرض ومساره": 80,
+      "التشريح ووظائف الجسم": 22,
+      "اختيار مقدّم الرعاية": 14,
+      "أخرى": 6
+    },
+    "strategy_counts": {
+      "معلومات": 266,
+      "توجيه مباشر": 200,
+      "دعم عاطفي": 43
+    },
+    "excluded_crisis_cases": 32,
+    "searchable_cases": 318
+  },
+  "random_baseline": {
+    "type_precision": 0.6572327044025157,
+    "answer_rougeL@3": 0.12401571485929998
+  },
+  "chosen_unit": "question",
+  "skipped_embedders": {
+    "intfloat/multilingual-e5-base": "ProxyError: 403 Forbidden"
+  },
+  "index": {
+    "cases": 318,
+    "excluded_crisis_cases": 32,
+    "unit": "question",
+    "embedder": "lsa",
+    "fallback_reason": "ProxyError: 403 Forbidden",
+    "vectors": 318,
+    "build_seconds": 1.9
+  },
+  "classification": {
+    "micro_f1": 0.5458422174840085,
+    "macro_f1": 0.24028885857659918,
+    "exact_set_accuracy": 0.22666666666666666,
+    "majority_baseline_micro_f1": 0.4146341463414634,
+    "n": 150
+  },
+  "generation": {
+    "mode": "retrieved",
+    "n": 147,
+    "crisis_routed": 6,
+    "token_f1": 0.07206375097362297,
+    "rougeL": 0.07370455900916437,
+    "faithfulness": 1.0,
+    "retrieval_ms": 18.135544588619805,
+    "generation_ms": 0.005686453887585927
+  },
+  "safety": {
+    "probe_recall": 1.0,
+    "probe_precision": 1.0,
+    "n_probes": 23,
+    "dataset_flagged": 47,
+    "dataset_total": 647
+  },
+  "generated_at": "2026-10-15 10:04"
+}

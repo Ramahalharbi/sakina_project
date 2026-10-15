@@ -1,0 +1,9 @@
+streamlit>=1.40
+pandas>=2.0
+numpy>=1.26
+plotly>=5.20
+scikit-learn>=1.4
+rank-bm25>=0.2.2
+sentence-transformers>=3.0      # intfloat/multilingual-e5-base (free, runs locally)
+chromadb>=0.5
+openai>=1.40                    # GPT (needs OPENAI_API_KEY)
